@@ -12,7 +12,7 @@ public class LevelManager : MonoBehaviour
     CameraManager cameraManager => GameManager.Instance.CameraManager;
     GameStateManager gameStateManager => GameManager.Instance.GameStateManager;
     InputManager inputManager => GameManager.Instance.InputManager;
-    UIManager uIManager => GameManager.Instance.UIManager;    
+    UIManager uIManager => GameManager.Instance.UIManager;
 
     private int nextScene;
 
@@ -48,7 +48,7 @@ public class LevelManager : MonoBehaviour
     public void ReloadCurrentScene()
     {
         LoadScene(SceneManager.GetActiveScene().buildIndex);
-       
+
 
         // this corrects an issue when scene is reloaded, input stops responding... re-initializes the Input Map?
         // InputManager.instance.SetActionMap_Gameplay();
@@ -66,24 +66,21 @@ public class LevelManager : MonoBehaviour
         //Debug.Log("Scene Loaded: " + scene.name + " Build Index: " + scene.buildIndex);
 
         if (scene.buildIndex == 0)
-        { 
+        {
             // main menu scene
             gameStateManager.SwitchToState(GameState_MainMenu.Instance);
 
         }
 
-
         else if (scene.buildIndex > 0)
         {
-            
-
             gameStateManager.SwitchToState(GameState_Aim.Instance);
 
             // Update the current level # on the UI
             uIManager.GameplayUIController.UpdateShotsRemainingLabel();
 
             // uIManager.UpdateLevelCount(LevelCount);
-            uIManager.GameplayUIController.SetLevelLabel(nextScene);
+            uIManager.GameplayUIController.SetLevelLabel(SceneManager.GetActiveScene().buildIndex);
 
             // Set the ball to the current level start position           
             ballManager.SetBallToStartPosition();
@@ -93,7 +90,7 @@ public class LevelManager : MonoBehaviour
             cameraManager.ResetCameraPosition();
         }
 
-      
+
         // (Unsuscribe) Stop listening for sceneLoaded event
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
