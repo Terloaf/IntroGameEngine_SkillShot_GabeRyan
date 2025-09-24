@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 163179052}
   - component: {fileID: 163179051}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: Tilted Surface (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -759,7 +759,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1.9643}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 505702790}
   m_LocalEulerAnglesHint: {x: -14.477, y: 3.967, z: -15.504}
 --- !u!1 &203844586
 GameObject:
@@ -897,7 +897,7 @@ GameObject:
   - component: {fileID: 328708686}
   - component: {fileID: 328708685}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7499,12 +7499,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328708684}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.6249995, y: 10.4, z: 2.5000002}
   m_LocalScale: {x: 1.25, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 505702790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &381285007
 GameObject:
@@ -7521,7 +7521,7 @@ GameObject:
   - component: {fileID: 381285009}
   - component: {fileID: 381285008}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Sloped wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8571,12 +8571,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 381285007}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -6, y: 14.4, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 505702790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &389211962
 PrefabInstance:
@@ -8670,6 +8670,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2040845192}
+  - {fileID: 381285013}
+  - {fileID: 328708690}
+  - {fileID: 1407448659}
+  - {fileID: 163179056}
+  - {fileID: 709161639}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &604712593
@@ -22825,12 +22830,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709161633}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.3058623, y: 8.77643, z: 42.7}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 505702790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &890839019
 Mesh:
@@ -23497,7 +23502,7 @@ GameObject:
   - component: {fileID: 1407448655}
   - component: {fileID: 1407448654}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Tilted Surface (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23949,10 +23954,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.12940976, y: -0.017037079, z: 0.12940928, w: 0.9829629}
   m_LocalPosition: {x: -1.7189641, y: 12.196016, z: 13.129879}
-  m_LocalScale: {x: 1, y: 1, z: 1.9464}
+  m_LocalScale: {x: 1, y: 1, z: 1.9464003}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 505702790}
   m_LocalEulerAnglesHint: {x: -14.478, y: -3.967, z: 15.504}
 --- !u!1001 &1634805830
 PrefabInstance:
@@ -25007,8 +25012,3 @@ SceneRoots:
   - {fileID: 505702790}
   - {fileID: 608247359}
   - {fileID: 978001784}
-  - {fileID: 328708690}
-  - {fileID: 381285013}
-  - {fileID: 1407448659}
-  - {fileID: 163179056}
-  - {fileID: 709161639}
